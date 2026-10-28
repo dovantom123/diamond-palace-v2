@@ -177,7 +177,7 @@ header.solid .menu-btn{border-color:var(--line);color:var(--ink)}
 /* layout */
 .lay{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:center}
 .plan{position:relative;display:block;width:100%;padding:0;border:0;cursor:zoom-in;border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px rgba(232,201,135,.45),0 30px 70px -30px rgba(0,0,0,.7)}
-.plan img{width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;transition:transform .8s var(--ease)}
+.plan img{width:100%;height:auto;object-fit:contain;transition:transform .8s var(--ease)}
 .plan:hover img{transform:scale(1.02)}
 .plan .zoom{position:absolute;right:14px;bottom:14px;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;background:var(--deep);color:#fff;font-size:13px;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.35)}
 .plan .zoom svg{width:18px;height:18px}
@@ -188,6 +188,10 @@ header.solid .menu-btn{border-color:var(--line);color:var(--ink)}
 .brow{display:flex;gap:12px;flex-wrap:wrap}
 @media(max-width:900px){.lay{grid-template-columns:1fr;gap:44px}}
 
+.seg{display:flex;gap:8px;flex-wrap:wrap;margin:28px 0 8px}
+.seg button{min-height:48px;padding:0 20px;border-radius:999px;border:1.5px solid rgba(255,255,255,.3);background:transparent;color:#fff;font-size:14px;font-weight:700;cursor:pointer;transition:.2s}
+.seg button:hover{border-color:var(--champ)}
+.seg button[aria-selected="true"]{background:var(--champ);border-color:var(--champ);color:var(--deep)}
 /* gallery */
 .gal{columns:3;column-gap:14px}
 .gal button{display:block;width:100%;margin:0 0 14px;padding:0;border:0;border-radius:18px;overflow:hidden;cursor:zoom-in;position:relative;background:var(--cream);break-inside:avoid}
@@ -215,16 +219,31 @@ dialog p{color:#fff;font-family:var(--serif);font-size:22px;text-align:center;ma
 @media(max-width:900px){.steps-wrap{grid-template-columns:1fr;gap:32px}.steps-wrap .sticky{position:static}.stp{opacity:1}}
 
 /* advisors */
-.cream{background:var(--cream)}
-.advs{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:960px}
-.adv{display:grid;grid-template-columns:150px 1fr;gap:24px;background:#fff;border-radius:24px;padding:20px;align-items:center}
-.adv img{width:150px;height:190px;object-fit:cover;border-radius:16px;background:var(--cream)}
-.adv small{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
-.adv h3{font-size:26px;margin:4px 0 6px}
-.adv .tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:700;color:var(--ink);font-size:18px}
-.adv .lk{display:flex;gap:18px;flex-wrap:wrap}
-@media(max-width:800px){.advs{grid-template-columns:1fr}}
-@media(max-width:440px){.adv{grid-template-columns:1fr}.adv img{width:100%;height:240px}}
+.adv-sec{background:radial-gradient(1000px 500px at 85% -10%,rgba(232,201,135,.16),transparent 60%),radial-gradient(800px 500px at 0% 110%,rgba(15,107,110,.45),transparent 60%),var(--deep)}
+.adv-head{max-width:640px;margin-bottom:56px}
+.adv-head .lead{margin-top:16px}
+.acards{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:1000px}
+.acard{background:rgba(255,255,255,.05);border:1px solid rgba(232,201,135,.28);border-radius:32px;overflow:hidden;transition:transform .4s var(--ease),border-color .4s,box-shadow .4s}
+.acard:hover{transform:translateY(-6px);border-color:var(--champ);box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.aphoto{position:relative;aspect-ratio:4/5;overflow:hidden;background:#0a2224}
+.aphoto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--px) var(--py);transform:scale(var(--z));transform-origin:var(--px) var(--oy)}
+.aphoto::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,42,44,.95) 0%,rgba(11,42,44,.1) 48%,transparent 70%)}
+.abadge{position:absolute;left:18px;top:18px;z-index:2;background:var(--champ);color:var(--deep);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:999px}
+.aname{position:absolute;left:24px;right:24px;bottom:22px;z-index:2}
+.aname h3{color:#fff;font-size:clamp(34px,4vw,46px);line-height:1}
+.aname small{display:block;font-family:var(--sans);font-size:15px;font-weight:600;color:var(--champ);letter-spacing:.02em;margin-top:8px}
+.abody{padding:24px 24px 26px}
+.abody>p{font-size:15px;color:var(--on-deep-m);margin-bottom:20px}
+.acall{display:flex;align-items:center;gap:16px;min-height:72px;padding:0 22px;border-radius:20px;background:var(--champ);color:var(--deep);font-family:var(--serif);font-size:30px;font-weight:600;line-height:1;transition:background .25s,transform .25s var(--ease)}
+.acall:hover{background:#fff;transform:translateY(-2px)}
+.acall span{flex:1;display:block}
+.acall small{display:block;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px;opacity:.8}
+.acall svg{width:26px;height:26px}
+.acall .go{width:22px;height:22px}
+.asoc{display:flex;gap:10px;margin-top:12px}
+.asoc a{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;border-radius:16px;border:1.5px solid rgba(255,255,255,.3);color:#fff;font-size:14px;font-weight:700;transition:.2s}
+.asoc a:hover{background:#fff;color:var(--deep);border-color:#fff}
+@media(max-width:800px){.acards{grid-template-columns:1fr;max-width:520px}.aphoto{aspect-ratio:1/1}.acall{font-size:25px;gap:12px;padding:0 18px}.acall span{white-space:nowrap}}
 
 /* faq */
 .faq{max-width:860px}
@@ -297,6 +316,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:#fff}foote
   <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
   <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></symbol>
   <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></symbol>
   <symbol id="i-gem" viewBox="0 0 24 24"><path d="M12 2 2 9l10 13L22 9z" fill="currentColor" stroke="none"/></symbol>
 </svg>
 <a class="skip" href="#main">Bỏ qua, đến nội dung chính</a>
@@ -425,16 +445,16 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:#fff}foote
     </article>
     <article class="hc">
       <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-hall-2.webp" alt="Không gian thực tế hội trường Diamond II" width="1200" height="900">
-      <div class="in"><small>Rộng mở những khả năng</small><h3>Diamond II</h3>
-        <p>Sảnh lớn nhất của Diamond Palace, phù hợp tiệc cưới quy mô lớn, hội nghị, gala doanh nghiệp và các chương trình nghệ thuật.</p>
-        <div class="chips"><span><b>1.200</b> khách</span><span><b>1.200</b> m²</span></div>
+      <div class="in"><small>Lộng lẫy &amp; rộng mở</small><h3>Diamond II</h3>
+        <p>Không gian rộng mở với hệ đèn trần, sân khấu và nhiều phương án bố trí bàn tiệc, hội nghị. Trao đổi layout để lựa chọn cấu hình phù hợp.</p>
+        <div class="chips"><span><b>1.200</b> khách</span><span><b>1.200</b> m²</span><span>Trần <b>10,6</b> m</span><span><b>28 × 43</b> m</span></div>
         <a class="btn btn-teal" href="#lien-he" data-hall="Diamond II">Tư vấn Diamond II</a></div>
     </article>
     <article class="hc">
       <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-hall-3.webp" alt="Không gian thực tế hội trường Diamond III" width="1200" height="900">
-      <div class="in"><small>Gần gũi từng cuộc gặp</small><h3>Diamond III</h3>
-        <p>Không gian ấm cúng cho tiệc thân mật, họp mặt gia đình, hội thảo nhỏ và các buổi gặp gỡ đối tác.</p>
-        <div class="chips"><span><b>200</b> khách</span><span><b>364</b> m²</span></div>
+      <div class="in"><small>Ấm cúng &amp; gần gũi</small><h3>Diamond III</h3>
+        <p>Không gian cho gala, yến tiệc và tiệc cá nhân. Trần cao kết hợp sân khấu có màn hình LED P5 tạo điểm tập trung cho chương trình.</p>
+        <div class="chips"><span><b>200</b> khách</span><span><b>364</b> m²</span><span>Trần <b>7,4</b> m</span><span><b>14 × 26</b> m</span></div>
         <a class="btn btn-teal" href="#lien-he" data-hall="Diamond III">Tư vấn Diamond III</a></div>
     </article>
   </div>
@@ -449,17 +469,24 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:#fff}foote
     <div class="rv">
       <p class="eyebrow">Không gian &amp; bố trí</p>
       <h2 id="h-lay">Layout hội trường <em>và sơ đồ PCCC.</em></h2>
-      <p class="lead" style="margin-top:18px">Xem bố trí bàn tiệc, sân khấu, lối ra vào và các ký hiệu PCCC trong tài liệu của hội trường.</p>
-      <div class="lf"><div><b>48</b><span>Bàn trên layout</span></div><div><b>400–500</b><span>Khách theo tài liệu</span></div></div>
-      <p class="lead" style="font-size:14px;margin-bottom:26px">Hội trường 1. Số bàn và sức chứa thay đổi theo cách bố trí sự kiện; liên hệ để xác nhận phương án thực tế.</p>
+      <p class="lead" style="margin-top:18px">Xem bố trí bàn tiệc, sân khấu, lối ra vào và các ký hiệu PCCC trong tài liệu của từng hội trường.</p>
+      <div class="seg" role="tablist" aria-label="Chọn hội trường" id="planTabs">
+        <button type="button" role="tab" id="pt1" aria-selected="true" aria-controls="planPanel" data-plan="1">Hội trường 1</button>
+        <button type="button" role="tab" id="pt2" aria-selected="false" aria-controls="planPanel" data-plan="2" tabindex="-1">Hội trường 2</button>
+        <button type="button" role="tab" id="pt3" aria-selected="false" aria-controls="planPanel" data-plan="3" tabindex="-1">Hội trường 3</button>
+      </div>
+      <div id="planInfo" role="status" aria-live="polite">
+        <div class="lf"><div><b id="pfTables">48</b><span>Bàn trên layout</span></div><div><b id="pfGuests">400–500</b><span id="pfGuestsLbl">Khách theo tài liệu</span></div></div>
+        <p class="lead" style="font-size:14px;margin-bottom:26px" id="pfNote">Hội trường 1. Số bàn và sức chứa thay đổi theo cách bố trí sự kiện; liên hệ để xác nhận phương án thực tế.</p>
+      </div>
       <div class="brow">
-        <a class="btn btn-champ" href="https://dovantom123.github.io/diamond-palace/assets/pccc-plan-1.png" target="_blank" rel="noopener">Mở ảnh lớn <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn-white" href="https://dovantom123.github.io/diamond-palace/documents/pccc-hoi-truong-1.pdf" target="_blank" rel="noopener">Tải PDF gốc <svg class="i" aria-hidden="true"><use href="#i-down"/></svg></a>
+        <a class="btn btn-champ" id="pfImg" href="https://dovantom123.github.io/diamond-palace/assets/pccc-plan-1.png" target="_blank" rel="noopener">Mở ảnh lớn <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-white" id="pfPdf" href="https://dovantom123.github.io/diamond-palace/documents/pccc-hoi-truong-1.pdf" target="_blank" rel="noopener">Tải PDF gốc <svg class="i" aria-hidden="true"><use href="#i-down"/></svg></a>
       </div>
     </div>
-    <div class="rv">
-      <button type="button" class="plan" data-cap="Layout và sơ đồ PCCC · Hội trường 1" data-full="https://dovantom123.github.io/diamond-palace/assets/pccc-plan-1.png" aria-label="Phóng to sơ đồ layout và PCCC hội trường 1">
-        <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/pccc-preview-1.webp" alt="Sơ đồ bố trí bàn tiệc và PCCC của hội trường 1" width="1600" height="1200">
+    <div class="rv" id="planPanel" role="tabpanel" aria-labelledby="pt1">
+      <button type="button" class="plan" id="planBtn" data-cap="Layout và sơ đồ PCCC · Hội trường 1" data-full="https://dovantom123.github.io/diamond-palace/assets/pccc-plan-1.png" aria-label="Phóng to sơ đồ layout và PCCC hội trường 1">
+        <img id="planImg" loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/pccc-preview-1.webp" alt="Sơ đồ bố trí bàn tiệc và PCCC của hội trường 1" width="1600" height="1200">
         <span class="zoom"><svg class="i" aria-hidden="true"><use href="#i-zoom"/></svg>Bấm để phóng to</span>
       </button>
       <p class="plan-cap">Bản gốc được giữ nguyên. Phóng to để xem rõ chú thích và ký hiệu.</p>
@@ -509,20 +536,43 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:#fff}foote
 </section>
 
 <!-- ADVISORS -->
-<section id="tu-van" aria-labelledby="h-adv">
+<section id="tu-van" class="dk adv-sec" aria-labelledby="h-adv">
   <div class="wrap">
-    <div class="rv" style="margin-bottom:48px">
+    <div class="adv-head rv">
       <p class="eyebrow">Đội ngũ tư vấn Diamond Palace</p>
       <h2 id="h-adv">Gặp người đồng hành <em>cho ngày đặc biệt.</em></h2>
-      <p class="lead" style="margin-top:16px">Chọn chuyên viên để cùng trao đổi về không gian, ý tưởng và kế hoạch tổ chức của bạn.</p>
+      <p class="lead">Gọi trực tiếp cho chuyên viên để trao đổi về sảnh tiệc, ý tưởng và lịch tham quan cho sự kiện của bạn.</p>
     </div>
-    <div class="advs">
-      <article class="adv rv"><img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/advisor-thu-ha.webp" alt="Thu Hà (Hà Bi), chuyên viên tư vấn Diamond Palace" width="300" height="380">
-        <div><small>Chuyên viên tư vấn</small><h3>Thu Hà (Hà Bi)</h3><a class="tel" href="tel:0838899688"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>0838 899 688</a>
-        <div class="lk"><a class="tl" href="https://zalo.me/0838899688" target="_blank" rel="noopener">Zalo</a><a class="tl" href="https://www.facebook.com/ha.buithu.2019" target="_blank" rel="noopener">Facebook</a></div></div></article>
-      <article class="adv rv"><img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/advisor-dung.webp" alt="Dũng, chuyên viên tư vấn Diamond Palace" width="300" height="380">
-        <div><small>Chuyên viên tư vấn</small><h3>Dũng Diamond Palace</h3><a class="tel" href="tel:0922336288"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>0922 336 288</a>
-        <div class="lk"><a class="tl" href="https://www.facebook.com/tran.dung.919705" target="_blank" rel="noopener">Facebook</a></div></div></article>
+    <div class="acards">
+      <article class="acard rv" style="--px:60%;--py:18%;--z:1.18;--oy:22%">
+        <div class="aphoto">
+          <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/advisor-thu-ha.webp" alt="Thu Hà (Hà Bi), chuyên viên tư vấn Diamond Palace" width="960" height="960">
+          <span class="abadge">Chuyên viên tư vấn</span>
+          <div class="aname"><h3>Thu Hà <small>(Hà Bi)</small></h3></div>
+        </div>
+        <div class="abody">
+          <p>Trao đổi về sảnh tiệc, ý tưởng và lịch tham quan cho sự kiện của bạn.</p>
+          <a class="acall" href="tel:0838899688"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span><small>Gọi tư vấn</small>0838 899 688</span><svg class="i go" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <div class="asoc">
+            <a href="https://zalo.me/0838899688" target="_blank" rel="noopener" aria-label="Nhắn Zalo cho Thu Hà"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>Zalo</a>
+            <a href="https://www.facebook.com/ha.buithu.2019" target="_blank" rel="noopener" aria-label="Facebook của Thu Hà"><svg class="i" aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a>
+          </div>
+        </div>
+      </article>
+      <article class="acard rv" style="--px:58%;--py:50%;--z:1.9;--oy:58%">
+        <div class="aphoto">
+          <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/advisor-dung.webp" alt="Dũng, chuyên viên tư vấn Diamond Palace" width="1443" height="868">
+          <span class="abadge">Chuyên viên tư vấn</span>
+          <div class="aname"><h3>Dũng <small>Diamond Palace</small></h3></div>
+        </div>
+        <div class="abody">
+          <p>Trao đổi về sảnh tiệc, ý tưởng và lịch tham quan cho sự kiện của bạn.</p>
+          <a class="acall" href="tel:0922336288"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span><small>Gọi tư vấn</small>0922 336 288</span><svg class="i go" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <div class="asoc">
+            <a href="https://www.facebook.com/tran.dung.919705" target="_blank" rel="noopener" aria-label="Facebook của Dũng"><svg class="i" aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -671,6 +721,30 @@ form.addEventListener('submit',e=>{
   const body=`Họ tên: ${f.get('name')}\nSĐT: ${f.get('phone')}\nLoại sự kiện: ${f.get('type')}\nSố khách: ${f.get('guests')||'-'}\nSảnh quan tâm: ${f.get('hall')}\nNgày dự kiến: ${f.get('date')||'-'}\nÝ tưởng: ${f.get('idea')||'-'}`;
   $('fmsg').textContent='Đang mở ứng dụng email của bạn. Nếu không thấy, hãy gọi 0703 223 666 để được tư vấn ngay.';
   location.href='mailto:sales.diamondpalacehalong@gmail.com?subject='+encodeURIComponent('Yêu cầu tư vấn đặt tiệc - '+f.get('name'))+'&body='+encodeURIComponent(body);
+});
+
+// layout tabs (hội trường 1-3)
+const PB='https://dovantom123.github.io/diamond-palace/';
+const plans={
+  1:{w:1600,h:1200,tables:'48',guests:'400–500',lbl:'Khách theo tài liệu',note:'Hội trường 1. Số bàn và sức chứa thay đổi theo cách bố trí sự kiện; liên hệ để xác nhận phương án thực tế.'},
+  2:{w:1600,h:1355,tables:'80',guests:'1.200',lbl:'Sức chứa tổng ghi trong tài liệu',note:'Hội trường 2. Số bàn và sức chứa thay đổi theo cách bố trí sự kiện; liên hệ để xác nhận phương án thực tế.'},
+  3:{w:1600,h:1200,tables:'21',guests:'210–250',lbl:'Khách theo tài liệu',note:'Hội trường 3. Số bàn và sức chứa thay đổi theo cách bố trí sự kiện; liên hệ để xác nhận phương án thực tế.'}
+};
+const ptabs=[...document.querySelectorAll('#planTabs [role=tab]')];
+function setPlan(n,focus){
+  const p=plans[n],img=$('planImg'),btn=$('planBtn');
+  img.src=PB+'assets/pccc-preview-'+n+'.webp';img.width=p.w;img.height=p.h;
+  img.alt='Sơ đồ bố trí bàn tiệc và PCCC của hội trường '+n;
+  btn.dataset.full=PB+'assets/pccc-plan-'+n+'.png';btn.dataset.cap='Layout và sơ đồ PCCC · Hội trường '+n;
+  btn.setAttribute('aria-label','Phóng to sơ đồ layout và PCCC hội trường '+n);
+  $('pfTables').textContent=p.tables;$('pfGuests').textContent=p.guests;$('pfGuestsLbl').textContent=p.lbl;$('pfNote').textContent=p.note;
+  $('pfImg').href=PB+'assets/pccc-plan-'+n+'.png';$('pfPdf').href=PB+'documents/pccc-hoi-truong-'+n+'.pdf';
+  $('planPanel').setAttribute('aria-labelledby','pt'+n);
+  ptabs.forEach(t=>{const on=+t.dataset.plan===n;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on&&focus)t.focus()});
+}
+ptabs.forEach((t,i)=>{
+  t.addEventListener('click',()=>setPlan(+t.dataset.plan));
+  t.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){const n=(i+(e.key==='ArrowRight'?1:ptabs.length-1))%ptabs.length;setPlan(+ptabs[n].dataset.plan,true);e.preventDefault()}});
 });
 
 // reveal + steps highlight + count-up
