@@ -328,7 +328,12 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:#fff}foote
 .place .frame::before{background:#e1d5bf;transform:translateY(30px) scale(.94);z-index:-1}
 .place .frame::after{background:#d2c4a9;transform:translateY(62px) scale(.88);z-index:-2}
 .place .frame img{box-shadow:var(--e3)}
-.place figcaption{margin-top:72px}
+.place .frame+figcaption{margin-top:72px}
+@media(max-width:700px){
+  .place .frame::before{transform:translateY(16px) scale(.95)}
+  .place .frame::after{transform:translateY(32px) scale(.9)}
+  .place .frame+figcaption{margin-top:52px}
+}
 .panel:not(:first-child){box-shadow:0 -28px 60px -20px rgba(0,0,0,.55)}
 .panel img{transform:translate3d(0,calc(var(--q,0)*2.5%),0) scale(calc(1.07 + var(--p,0)*.07));will-change:transform}
 .panel::after{content:"";position:absolute;inset:0;z-index:1;background:#03100f;opacity:calc(var(--p,0)*.7);pointer-events:none}
