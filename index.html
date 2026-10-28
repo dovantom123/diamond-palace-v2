@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diamond Palace Hạ Long | Tiệc cưới & sự kiện</title>
+<meta name="description" content="Trung tâm tiệc cưới và sự kiện Diamond Palace Hạ Long: ba sảnh tiệc cho tiệc cưới, hội nghị, gala và những dịp hội ngộ.">
+<meta name="theme-color" content="#0e1a30">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#f9f7f3; --paper:#ffffff; --sand:#efeae0; --ink:#0e1a30; --body:#3d4658; --muted:#5b6475;
+  --line:#ddd6c8; --navy:#0e1a30; --navy2:#16264a; --gold:#a16207; --gold-soft:#d4af6a; --on-navy:#eef0f5; --on-navy-m:#aab3c5;
+  --serif:"Cormorant",Georgia,"Times New Roman",serif; --sans:Montserrat,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --max:1200px; --hdr:76px; --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hdr) + 12px)}
+body{background:var(--ivory);color:var(--body);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;padding-bottom:0}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:112px 0}
+@media(max-width:700px){section{padding:72px 0}}
+.skip{position:absolute;left:-999px;top:8px;background:var(--navy);color:#fff;padding:12px 18px;z-index:200}
+.skip:focus{left:8px}
+
+/* type */
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--ink);line-height:1.08;letter-spacing:-.005em}
+h1{font-size:clamp(48px,7.4vw,104px);color:#fff}
+h2{font-size:clamp(36px,4.6vw,60px)}
+h3{font-size:30px}
+h2 em,h1 em{font-style:italic;font-weight:400;color:var(--gold)}
+h1 em{color:var(--gold-soft)}
+.kicker{display:flex;align-items:center;gap:14px;font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+.kicker::before{content:"";width:36px;height:1px;background:currentColor}
+.lead{font-size:18px;max-width:560px;color:var(--body)}
+.on-dark .kicker{color:var(--gold-soft)}
+.on-dark h2{color:#fff}.on-dark h2 em{color:var(--gold-soft)}
+.on-dark .lead{color:var(--on-navy-m)}
+.head{margin-bottom:60px}
+
+/* buttons: min 44px target */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;white-space:nowrap;min-height:52px;padding:0 30px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--gold);cursor:pointer;transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#85500a;border-color:#85500a}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn-light:hover{background:#fff;color:var(--navy)}
+.tlink{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--gold);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid transparent}
+.tlink:hover{border-color:currentColor}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.on-dark :focus-visible,.hero :focus-visible{outline-color:var(--gold-soft)}
+
+/* top strip + header */
+.strip{background:var(--navy);color:var(--on-navy-m);font-size:12px;letter-spacing:.06em}
+.strip .wrap{display:flex;justify-content:space-between;gap:16px;min-height:40px;align-items:center}
+.strip a{display:inline-flex;align-items:center;gap:8px;min-height:40px;color:#fff}
+.strip a:hover{color:var(--gold-soft)}
+@media(max-width:700px){.strip .addr{display:none}.strip .wrap{justify-content:center}}
+header{position:sticky;top:0;z-index:60;background:rgba(249,247,243,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:var(--hdr);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:var(--serif);font-size:27px;font-weight:600;letter-spacing:.16em;color:var(--ink);white-space:nowrap}
+.brand small{font-size:9px;letter-spacing:.34em;color:var(--gold);font-weight:600;margin-top:6px;white-space:nowrap}
+nav ul{display:flex;gap:6px;list-style:none}
+nav a.l{display:flex;align-items:center;min-height:44px;padding:0 14px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);white-space:nowrap;position:relative}
+nav a.l::after{content:"";position:absolute;left:14px;right:14px;bottom:8px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .3s var(--ease)}
+nav a.l:hover::after,nav a.l[aria-current="true"]::after{transform:scaleX(1)}
+.nav-r{display:flex;align-items:center;gap:12px}
+.menu-btn{display:none;width:48px;height:48px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;align-items:center;justify-content:center}
+@media(max-width:1240px){
+  .menu-btn{display:inline-flex}
+  nav{position:fixed;inset:calc(var(--hdr) + 40px) 0 0 0;background:var(--ivory);padding:12px 24px 32px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:.25s var(--ease);overflow:auto}
+  nav.open{transform:none;opacity:1;visibility:visible}
+  nav ul{flex-direction:column;gap:0}
+  nav a.l{font-size:15px;min-height:60px;padding:0;border-bottom:1px solid var(--line)}
+  nav a.l::after{display:none}
+  .nav-r .btn{display:none}
+}
+
+/* hero */
+.hero{position:relative;color:#fff;min-height:min(88vh,860px);display:flex;align-items:center;background:var(--navy);padding:0}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(14,26,48,.92) 0%,rgba(14,26,48,.7) 45%,rgba(14,26,48,.25) 100%),linear-gradient(0deg,rgba(14,26,48,.7),transparent 35%)}
+.hero .wrap{position:relative;z-index:2;padding-top:96px;padding-bottom:150px}
+.hero .kicker{color:var(--gold-soft)}
+.hero .tag{font-family:var(--serif);font-size:clamp(24px,3vw,34px);margin:28px 0 14px;color:#fff}
+.hero .tag i{color:var(--gold-soft)}
+.hero p.lead{color:#d6dbe6;max-width:520px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:40px}
+@media(max-width:700px){.hero::before{background:linear-gradient(0deg,rgba(14,26,48,.95),rgba(14,26,48,.55) 70%,rgba(14,26,48,.4))}.hero{align-items:flex-end}.hero .wrap{padding-bottom:120px;padding-top:80px}}
+
+/* quick inquiry bar */
+.quick{position:relative;z-index:5;margin-top:-72px}
+.quick form{background:var(--paper);border:1px solid var(--line);box-shadow:0 24px 60px -24px rgba(14,26,48,.35);display:grid;grid-template-columns:1.1fr 1fr 1fr auto;gap:0;align-items:stretch}
+.quick label{display:grid;gap:4px;padding:18px 22px;border-right:1px solid var(--line);font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.quick select,.quick input{border:0;background:transparent;font:inherit;font-size:16px;letter-spacing:0;text-transform:none;color:var(--ink);font-weight:500;padding:2px 0;min-height:32px;width:100%}
+.quick select{appearance:none;-webkit-appearance:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%230e1a30' stroke-width='1.6'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E") right 2px center no-repeat;padding-right:20px;cursor:pointer}
+.quick .btn{height:100%;min-height:72px;border:0}
+@media(max-width:900px){.quick form{grid-template-columns:1fr 1fr}.quick label{border-bottom:1px solid var(--line)}.quick .btn{grid-column:1/-1;min-height:56px}}
+@media(max-width:520px){.quick form{grid-template-columns:1fr}.quick label{border-right:0}}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1fr 1.15fr;gap:96px;align-items:center}
+.intro .photo{position:relative}
+.intro .photo img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 40%;background:var(--sand)}
+.intro .photo::after{content:"";position:absolute;inset:24px -24px -24px 24px;border:1px solid var(--gold);z-index:-1}
+.values{margin-top:44px;display:grid;gap:0;border-top:1px solid var(--line)}
+.value{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:24px 0;border-bottom:1px solid var(--line)}
+.value i{font-family:var(--serif);font-style:normal;font-size:34px;color:var(--gold);line-height:1}
+.value b{display:block;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:4px}
+.value p{font-size:15px}
+@media(max-width:900px){.intro{grid-template-columns:1fr;gap:56px}.intro .photo::after{display:none}.intro .photo img{aspect-ratio:4/3}}
+
+/* occasions */
+.sand{background:var(--sand)}
+.occ{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.occ a{position:relative;display:block;overflow:hidden;aspect-ratio:3/4;background:var(--navy)}
+.occ img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.occ a:hover img{transform:scale(1.05)}
+.occ a::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,26,48,.92),rgba(14,26,48,.1) 62%)}
+.occ div{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:30px;color:#fff}
+.occ small{font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-soft)}
+.occ h3{color:#fff;margin:8px 0 10px}
+.occ p{font-size:14px;color:#d6dbe6;margin-bottom:14px}
+.occ span{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-soft)}
+@media(max-width:900px){.occ{grid-template-columns:1fr}.occ a{aspect-ratio:4/3}}
+
+/* halls */
+.halls{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.hallc{background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column;transition:border-color .3s,box-shadow .3s}
+.hallc:hover{border-color:var(--gold);box-shadow:0 20px 50px -28px rgba(14,26,48,.4)}
+.hallc img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--sand)}
+.hallc .in{padding:30px;display:flex;flex-direction:column;flex:1}
+.hallc small{font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.hallc h3{margin:6px 0 10px}
+.hallc p{font-size:15px;margin-bottom:22px}
+.spec{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:auto;margin-bottom:24px}
+.spec div{padding:16px 0;border-bottom:1px solid var(--line)}
+.spec div:nth-child(odd){border-right:1px solid var(--line);padding-right:12px}
+.spec div:nth-child(even){padding-left:18px}
+.spec b{display:block;font-family:var(--serif);font-size:32px;font-weight:500;color:var(--ink);line-height:1}
+.spec span{font-size:11px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase;font-weight:500}
+.hallc .btn{width:100%}
+.note{font-size:13px;color:var(--muted);margin-top:28px;max-width:760px}
+.compare{margin-top:56px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:520px;background:var(--paper);border:1px solid var(--line)}
+caption{text-align:left;font-family:var(--serif);font-size:28px;color:var(--ink);padding:0 0 16px}
+th,td{text-align:left;padding:18px 22px;border-bottom:1px solid var(--line);font-size:15px}
+th{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--ivory)}
+td b{color:var(--ink);font-weight:600}
+.bar{display:block;height:4px;background:var(--sand);margin-top:8px;min-width:120px}
+.bar i{display:block;height:100%;background:var(--gold)}
+@media(max-width:900px){.halls{grid-template-columns:1fr}}
+
+/* layout */
+.dark{background:var(--navy);color:var(--on-navy)}
+.lay{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center}
+.lay img{width:100%;background:#fff;border:1px solid rgba(255,255,255,.18)}
+.lay-facts{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:32px 0;border-top:1px solid rgba(255,255,255,.18)}
+.lay-facts div{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.lay-facts b{display:block;font-family:var(--serif);font-size:40px;font-weight:500;color:var(--gold-soft);line-height:1}
+.lay-facts span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--on-navy-m)}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap}
+@media(max-width:900px){.lay{grid-template-columns:1fr;gap:48px}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:14px}
+.gal button{position:relative;border:0;padding:0;overflow:hidden;cursor:zoom-in;background:var(--sand)}
+.gal button:nth-child(1){grid-column:span 6;grid-row:span 3}
+.gal button:nth-child(2){grid-column:span 3;grid-row:span 2}
+.gal button:nth-child(3){grid-column:span 3;grid-row:span 2}
+.gal button:nth-child(4){grid-column:span 3;grid-row:span 1}
+.gal button:nth-child(5){grid-column:span 3;grid-row:span 1}
+.gal button:nth-child(6){grid-column:span 6;grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gal button:hover img{transform:scale(1.05)}
+.gal span{position:absolute;left:0;right:0;bottom:0;padding:36px 18px 14px;text-align:left;background:linear-gradient(0deg,rgba(14,26,48,.85),transparent);color:#fff;font-family:var(--serif);font-size:21px}
+@media(max-width:800px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:140px}.gal button:nth-child(n){grid-column:span 1;grid-row:span 1}.gal button:nth-child(1),.gal button:nth-child(6){grid-column:span 2;grid-row:span 2}}
+dialog{border:0;background:transparent;max-width:min(1100px,94vw);max-height:92vh;width:100%;margin:auto;overflow:visible}
+dialog::backdrop{background:rgba(8,14,28,.92)}
+dialog img{width:100%;max-height:82vh;object-fit:contain}
+dialog p{color:#fff;font-family:var(--serif);font-size:22px;text-align:center;margin-top:12px}
+.dclose{position:absolute;right:0;top:-56px;width:48px;height:48px;border:1px solid rgba(255,255,255,.5);background:transparent;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.dclose:hover{background:#fff;color:var(--navy)}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);counter-reset:s;position:relative}
+.step{padding:0 28px 0 0;position:relative}
+.step::before{content:"";position:absolute;left:0;right:0;top:27px;height:1px;background:var(--line)}
+.step:last-child::before{right:50%}
+.step .n{position:relative;width:54px;height:54px;border:1px solid var(--gold);background:var(--ivory);color:var(--gold);font-family:var(--serif);font-size:26px;display:flex;align-items:center;justify-content:center;margin-bottom:26px;z-index:1}
+.step h3{font-size:26px;margin-bottom:8px}
+.step p{font-size:15px}
+@media(max-width:900px){.steps{grid-template-columns:1fr;gap:34px}.step::before{display:none}.step{padding:0 0 0 76px}.step .n{position:absolute;left:0;top:0;margin:0}}
+
+/* advisors */
+.advs{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:960px}
+.adv{display:grid;grid-template-columns:150px 1fr;gap:26px;background:var(--paper);border:1px solid var(--line);padding:22px;align-items:center}
+.adv img{width:150px;height:190px;object-fit:cover;background:var(--sand)}
+.adv small{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.adv h3{font-size:28px;margin:4px 0 6px}
+.adv .tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;color:var(--ink);font-size:18px}
+.adv .lk{display:flex;gap:18px;flex-wrap:wrap}
+@media(max-width:800px){.advs{grid-template-columns:1fr}}
+@media(max-width:440px){.adv{grid-template-columns:1fr}.adv img{width:100%;height:240px}}
+
+/* faq */
+.faq{max-width:860px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:var(--serif);font-size:26px;color:var(--ink);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary svg{transition:transform .3s var(--ease);color:var(--gold)}
+details[open] summary svg{transform:rotate(45deg)}
+details p{padding:0 40px 26px 0;max-width:720px}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px}
+.cinfo{margin-top:36px;display:grid;gap:4px}
+.cinfo a,.cinfo .r{display:flex;gap:14px;align-items:flex-start;min-height:48px;padding:10px 0;color:#fff;font-size:16px;border-bottom:1px solid rgba(255,255,255,.14)}
+.cinfo a:hover{color:var(--gold-soft)}
+.cinfo svg{color:var(--gold-soft);margin-top:3px}
+.map{margin-top:32px;border:1px solid rgba(255,255,255,.18);aspect-ratio:16/10;background:#0b1424}
+.map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.2) contrast(1.05)}
+.fcard{background:var(--paper);padding:44px;color:var(--body)}
+.fcard h3{font-size:36px;margin-bottom:6px}
+.fcard>p{font-size:15px;margin-bottom:28px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fld{display:grid;gap:8px}
+.fld.full{grid-column:1/-1}
+.fld label{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+.fld label span{color:var(--gold)}
+.fld input,.fld select,.fld textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--ivory);border:1px solid var(--line);padding:0 16px;min-height:52px;width:100%;border-radius:0;transition:border-color .2s}
+.fld textarea{padding:14px 16px;min-height:110px;resize:vertical}
+.fld input:hover,.fld select:hover,.fld textarea:hover{border-color:#b9ae98}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(161,98,7,.18)}
+.fld .hint{font-size:12px;color:var(--muted)}
+.fld .err{font-size:13px;color:#b42318;display:none;font-weight:500}
+.fld.bad input{border-color:#b42318}
+.fld.bad .err{display:block}
+#summary{display:none;border:1px solid #b42318;background:#fef3f2;color:#7a1710;padding:16px 20px;margin-bottom:24px;font-size:14px}
+#summary.show{display:block}
+#summary a{text-decoration:underline;display:block;min-height:28px}
+.fcard .btn{width:100%;margin-top:26px}
+#fmsg{font-size:13px;color:var(--muted);margin-top:16px;text-align:center}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:56px}}
+@media(max-width:560px){.fcard{padding:28px 20px}.fgrid{grid-template-columns:1fr}}
+
+footer{background:#091224;color:var(--on-navy-m);padding:56px 0 100px;font-size:14px}
+.fgrid2{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+footer .brand b{color:#fff}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:#fff}
+footer a:hover{color:var(--gold-soft)}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:32px;padding-top:24px;font-size:12px}
+@media(min-width:901px){footer{padding-bottom:56px}}
+
+/* mobile action bar */
+.bar-m{display:none}
+@media(max-width:900px){
+  .bar-m{position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;grid-template-columns:1fr 1fr 1fr;background:var(--navy);border-top:1px solid rgba(255,255,255,.14);padding-bottom:env(safe-area-inset-bottom)}
+  .bar-m a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:60px;color:#fff;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+  .bar-m a.pri{background:var(--gold)}
+}
+
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none}*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></symbol>
+  <symbol id="i-zalo" viewBox="0 0 24 24"><path d="M4 5h16v11H11l-4 3v-3H4z"/><path d="M8 9h8l-8 4h8"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Bỏ qua, đến nội dung chính</a>
+
+<div class="strip">
+  <div class="wrap">
+    <span class="addr">Hạ Long Marina · Bãi Cháy · Quảng Ninh</span>
+    <a href="tel:0703223666"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Hotline tư vấn 0703 223 666</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Diamond Palace Hạ Long, về đầu trang"><b>DIAMOND PALACE</b><small>EVENT &amp; WEDDING · HẠ LONG</small></a>
+    <nav id="nav" aria-label="Điều hướng chính">
+      <ul>
+        <li><a class="l" href="#gioi-thieu">Giới thiệu</a></li>
+        <li><a class="l" href="#dip">Sự kiện</a></li>
+        <li><a class="l" href="#sanh">Sảnh tiệc</a></li>
+        <li><a class="l" href="#layout">Layout</a></li>
+        <li><a class="l" href="#thu-vien">Thư viện</a></li>
+        <li><a class="l" href="#lien-he">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <div class="nav-r">
+      <a class="btn btn-gold" href="#lien-he">Đặt lịch tham quan</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Mở menu" aria-expanded="false" aria-controls="nav"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<div id="top"></div>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="h-hero">
+  <img src="https://dovantom123.github.io/diamond-palace/assets/drive-hero.webp" alt="Toàn cảnh hội trường Diamond II với trần đèn pha lê và lối dẫn trung tâm" width="1920" height="1440" fetchpriority="high">
+  <div class="wrap">
+    <p class="kicker">Trung tâm tiệc cưới &amp; sự kiện</p>
+    <h1 id="h-hero">Diamond Palace <em>Hạ Long</em></h1>
+    <p class="tag">Không gian xứng tầm. <i>Khoảnh khắc của riêng bạn.</i></p>
+    <p class="lead">Tiệc cưới, hội nghị và những cuộc hội ngộ tại Hạ Long. Bắt đầu từ không gian phù hợp với câu chuyện của bạn.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="#sanh">Khám phá sảnh tiệc</a>
+      <a class="btn btn-light" href="#lien-he">Nhận tư vấn đặt tiệc</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK INQUIRY -->
+<div class="quick">
+  <div class="wrap">
+    <form id="quickForm" aria-label="Chọn nhanh sự kiện">
+      <label>Loại sự kiện
+        <select id="qType"><option>Tiệc cưới</option><option>Hội nghị / Hội thảo</option><option>Gala / Sự kiện doanh nghiệp</option><option>Yến tiệc / Sự kiện khác</option></select>
+      </label>
+      <label>Số khách dự kiến
+        <input id="qGuests" type="number" min="1" inputmode="numeric" placeholder="Ví dụ 300">
+      </label>
+      <label>Ngày dự kiến
+        <input id="qDate" type="date">
+      </label>
+      <button class="btn btn-gold" type="submit">Nhận tư vấn <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    </form>
+  </div>
+</div>
+
+<!-- GIỚI THIỆU -->
+<section id="gioi-thieu" aria-labelledby="h-intro">
+  <div class="wrap intro">
+    <div class="photo rv">
+      <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/diamond-palace-facade.jpg" alt="Mặt tiền Diamond Palace với cửa kính vòm, bảng hiệu vàng và lối vào trung tâm" width="1200" height="1200">
+    </div>
+    <div class="rv">
+      <p class="kicker">Giới thiệu Diamond Palace</p>
+      <h2 id="h-intro">Mỗi sự kiện bắt đầu <em>từ câu chuyện của bạn.</em></h2>
+      <p class="lead">Một lễ cưới cần sự lãng mạn. Một hội nghị cần tính chỉn chu. Một buổi gala cần nhịp điệu và sự kết nối. Diamond Palace cùng bạn tìm cách tổ chức phù hợp với mục đích, quy mô và phong cách riêng.</p>
+      <div class="values">
+        <div class="value"><i>01</i><div><b>Không gian có cá tính</b><p>Ba sảnh tiệc với phong cách riêng, dành cho tiệc cưới, hội nghị, gala và các chương trình nghệ thuật.</p></div></div>
+        <div class="value"><i>02</i><div><b>Chi tiết tạo cảm xúc</b><p>Ý tưởng trang trí, thực đơn và chương trình được trao đổi cùng nhau để tạo một trải nghiệm hài hòa.</p></div></div>
+        <div class="value"><i>03</i><div><b>Kế hoạch rõ ràng</b><p>Khám phá sảnh, xem layout bố trí và trao đổi từng hạng mục trước khi xác nhận phương án tổ chức.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DỊP -->
+<section id="dip" class="sand" aria-labelledby="h-occ">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker">Mỗi dịp một câu chuyện</p>
+      <h2 id="h-occ">Mỗi dịp đặc biệt. <em>Một trải nghiệm riêng.</em></h2>
+      <p class="lead">Từ lễ cưới ngập tràn cảm xúc đến hội nghị chỉn chu, mỗi không gian được lựa chọn để phù hợp với tính chất sự kiện.</p>
+    </div>
+    <div class="occ">
+      <a class="rv" href="#lien-he" data-type="Tiệc cưới">
+        <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-wedding.webp" alt="Trang trí tiệc cưới tại hội trường Diamond I" width="1920" height="1440">
+        <div><small>Tiệc cưới</small><h3>Ngày chung đôi</h3><p>Hoa, ánh sáng và nghi lễ hòa cùng câu chuyện tình yêu của hai bạn.</p><span>Khởi đầu câu chuyện <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="rv" href="#lien-he" data-type="Hội nghị / Hội thảo">
+        <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-corporate.webp" alt="Bố trí bàn tiệc và ánh sáng sự kiện tại Diamond II" width="1920" height="1440">
+        <div><small>Hội nghị &amp; doanh nghiệp</small><h3>Dấu ấn doanh nghiệp</h3><p>Hội nghị, ra mắt sản phẩm và gala, nơi kết nối cùng một tầm nhìn.</p><span>Trao đổi kế hoạch <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="rv" href="#lien-he" data-type="Gala / Sự kiện doanh nghiệp">
+        <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-celebration.webp" alt="Chương trình biểu diễn trên sân khấu Diamond I" width="1920" height="1281">
+        <div><small>Gala &amp; hội ngộ</small><h3>Những dịp hội ngộ</h3><p>Yến tiệc, chương trình nghệ thuật và những cuộc gặp đáng để mong chờ.</p><span>Tạo nên dịp đặc biệt <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SẢNH -->
+<section id="sanh" aria-labelledby="h-halls">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker">Ba không gian · ba cá tính</p>
+      <h2 id="h-halls">Chọn sân khấu <em>cho câu chuyện của bạn.</em></h2>
+      <p class="lead">Khám phá từng sảnh để tìm không gian phù hợp với số lượng khách mời và cách bạn muốn tổ chức.</p>
+    </div>
+    <div class="halls">
+      <article class="hallc rv">
+        <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-hall-1.webp" alt="Không gian thực tế hội trường Diamond I" width="1200" height="900">
+        <div class="in"><small>Lãng mạn &amp; cổ tích</small><h3>Diamond I</h3>
+          <p>Hệ trần đèn buông, lối dẫn trung tâm và không gian bàn tiệc tạo nên bối cảnh cho lễ cưới, gala và những cuộc hội ngộ.</p>
+          <div class="spec"><div><b>600</b><span>Khách</span></div><div><b>664 m²</b><span>Diện tích</span></div><div><b>7,4 m</b><span>Chiều cao trần</span></div><div><b>25×26 m</b><span>Rộng × Dài</span></div></div>
+          <a class="btn btn-ghost" href="#lien-he" data-hall="Diamond I">Tư vấn Diamond I</a></div>
+      </article>
+      <article class="hallc rv">
+        <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-hall-2.webp" alt="Không gian thực tế hội trường Diamond II" width="1200" height="900">
+        <div class="in"><small>Rộng mở những khả năng</small><h3>Diamond II</h3>
+          <p>Sảnh lớn nhất của Diamond Palace, phù hợp tiệc cưới quy mô lớn, hội nghị, gala doanh nghiệp và các chương trình nghệ thuật.</p>
+          <div class="spec"><div><b>1.200</b><span>Khách</span></div><div><b>1.200 m²</b><span>Diện tích</span></div></div>
+          <a class="btn btn-ghost" href="#lien-he" data-hall="Diamond II">Tư vấn Diamond II</a></div>
+      </article>
+      <article class="hallc rv">
+        <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-hall-3.webp" alt="Không gian thực tế hội trường Diamond III" width="1200" height="900">
+        <div class="in"><small>Gần gũi từng cuộc gặp</small><h3>Diamond III</h3>
+          <p>Không gian ấm cúng cho tiệc thân mật, họp mặt gia đình, hội thảo nhỏ và các buổi gặp gỡ đối tác.</p>
+          <div class="spec"><div><b>200</b><span>Khách</span></div><div><b>364 m²</b><span>Diện tích</span></div></div>
+          <a class="btn btn-ghost" href="#lien-he" data-hall="Diamond III">Tư vấn Diamond III</a></div>
+      </article>
+    </div>
+    <div class="compare rv">
+      <table>
+        <caption>So sánh nhanh ba sảnh</caption>
+        <thead><tr><th scope="col">Sảnh</th><th scope="col">Khách theo profile</th><th scope="col">Diện tích</th></tr></thead>
+        <tbody>
+          <tr><th scope="row" style="color:var(--ink);font-size:15px;letter-spacing:.08em">Diamond I</th><td><b>600</b><span class="bar" aria-hidden="true"><i style="width:50%"></i></span></td><td><b>664 m²</b></td></tr>
+          <tr><th scope="row" style="color:var(--ink);font-size:15px;letter-spacing:.08em">Diamond II</th><td><b>1.200</b><span class="bar" aria-hidden="true"><i style="width:100%"></i></span></td><td><b>1.200 m²</b></td></tr>
+          <tr><th scope="row" style="color:var(--ink);font-size:15px;letter-spacing:.08em">Diamond III</th><td><b>200</b><span class="bar" aria-hidden="true"><i style="width:17%"></i></span></td><td><b>364 m²</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Thông số theo profile giới thiệu. Sức chứa thực tế cần xác nhận theo layout bàn tiệc và chương trình.</p>
+  </div>
+</section>
+
+<!-- LAYOUT -->
+<section id="layout" class="dark on-dark" aria-labelledby="h-lay">
+  <div class="wrap lay">
+    <div class="rv">
+      <p class="kicker">Không gian &amp; bố trí</p>
+      <h2 id="h-lay">Layout hội trường <em>và sơ đồ PCCC.</em></h2>
+      <p class="lead">Xem bố trí bàn tiệc, sân khấu, lối ra vào và các ký hiệu PCCC trong tài liệu của hội trường.</p>
+      <div class="lay-facts">
+        <div><b>48</b><span>Bàn trên layout</span></div>
+        <div><b>400–500</b><span>Khách theo tài liệu</span></div>
+      </div>
+      <p class="lead" style="font-size:14px;margin-bottom:28px">Hội trường 1. Số bàn và sức chứa thay đổi theo cách bố trí sự kiện; liên hệ để xác nhận phương án thực tế.</p>
+      <div class="btn-row">
+        <a class="btn btn-gold" href="https://dovantom123.github.io/diamond-palace/assets/pccc-plan-1.png" target="_blank" rel="noopener">Mở ảnh lớn <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-light" href="https://dovantom123.github.io/diamond-palace/documents/pccc-hoi-truong-1.pdf" target="_blank" rel="noopener">Tải PDF gốc <svg class="i" aria-hidden="true"><use href="#i-down"/></svg></a>
+      </div>
+    </div>
+    <div class="rv">
+      <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/pccc-preview-1.webp" alt="Sơ đồ bố trí bàn tiệc và PCCC của hội trường 1" width="1400" height="1000">
+    </div>
+  </div>
+</section>
+
+<!-- THƯ VIỆN -->
+<section id="thu-vien" aria-labelledby="h-gal">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker">Góc nhìn Diamond Palace</p>
+      <h2 id="h-gal">Cảm hứng <em>cho ngày của bạn.</em></h2>
+      <p class="lead">Ảnh thực tế: không gian, sân khấu và những chi tiết làm nên bầu không khí của sự kiện. Chọn ảnh để xem lớn.</p>
+    </div>
+    <div class="gal">
+      <button type="button" data-full="https://dovantom123.github.io/diamond-palace/assets/drive-gallery-1.webp" data-cap="Diamond I · Không gian mở lời"><img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-gallery-1.webp" alt="Diamond I, không gian mở lời"><span>Diamond I</span></button>
+      <button type="button" data-full="https://dovantom123.github.io/diamond-palace/assets/drive-wedding.webp" data-cap="Tiệc cưới · Sắc hoa ngày chung đôi"><img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-wedding.webp" alt="Tiệc cưới, sắc hoa ngày chung đôi"><span>Sắc hoa</span></button>
+      <button type="button" data-full="https://dovantom123.github.io/diamond-palace/assets/drive-hall-2.webp" data-cap="Diamond II · Rộng mở những khả năng"><img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-hall-2.webp" alt="Diamond II, rộng mở những khả năng"><span>Diamond II</span></button>
+      <button type="button" data-full="https://dovantom123.github.io/diamond-palace/assets/drive-corporate.webp" data-cap="Hội nghị &amp; sự kiện · Dấu ấn doanh nghiệp"><img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-corporate.webp" alt="Hội nghị và sự kiện, dấu ấn doanh nghiệp"><span>Doanh nghiệp</span></button>
+      <button type="button" data-full="https://dovantom123.github.io/diamond-palace/assets/drive-hall-3.webp" data-cap="Diamond III · Gần gũi từng cuộc gặp"><img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-hall-3.webp" alt="Diamond III, gần gũi từng cuộc gặp"><span>Diamond III</span></button>
+      <button type="button" data-full="https://dovantom123.github.io/diamond-palace/assets/drive-gallery-3.webp" data-cap="Tiệc cưới · Khởi đầu một hành trình"><img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/drive-gallery-3.webp" alt="Tiệc cưới, khởi đầu một hành trình"><span>Khởi đầu một hành trình</span></button>
+    </div>
+    <p style="margin-top:32px"><a class="tlink" href="https://www.facebook.com/DiamondPalaceHaLong/photos" target="_blank" rel="noopener">Xem thêm ảnh trên fanpage <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+<dialog id="lb" aria-label="Xem ảnh lớn">
+  <button class="dclose" id="lbClose" aria-label="Đóng ảnh"><svg class="i" aria-hidden="true"><use href="#i-close"/></svg></button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+</dialog>
+
+<!-- QUY TRÌNH -->
+<section class="sand" aria-labelledby="h-step">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker">Từ ý tưởng đến ngày diễn ra</p>
+      <h2 id="h-step">Cùng bạn chuẩn bị, <em>từng bước.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="n">1</div><h3>Chia sẻ mong muốn</h3><p>Ngày dự kiến, số khách, ngân sách và điều bạn mong đợi nhất.</p></div>
+      <div class="step rv"><div class="n">2</div><h3>Khám phá không gian</h3><p>Trao đổi lịch tham quan và tìm sảnh phù hợp với sự kiện.</p></div>
+      <div class="step rv"><div class="n">3</div><h3>Định hình trải nghiệm</h3><p>Thống nhất hướng trang trí, thực đơn và nội dung chương trình.</p></div>
+      <div class="step rv"><div class="n">4</div><h3>Hoàn thiện kế hoạch</h3><p>Trao đổi các hạng mục và lịch trình trước khi xác nhận tổ chức.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TƯ VẤN -->
+<section id="tu-van" aria-labelledby="h-adv">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kicker">Đội ngũ tư vấn Diamond Palace</p>
+      <h2 id="h-adv">Gặp người đồng hành <em>cho ngày đặc biệt.</em></h2>
+      <p class="lead">Chọn chuyên viên để cùng trao đổi về không gian, ý tưởng và kế hoạch tổ chức của bạn.</p>
+    </div>
+    <div class="advs">
+      <article class="adv rv">
+        <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/advisor-thu-ha.webp" alt="Thu Hà (Hà Bi), chuyên viên tư vấn Diamond Palace" width="300" height="380">
+        <div><small>Chuyên viên tư vấn</small><h3>Thu Hà (Hà Bi)</h3>
+          <a class="tel" href="tel:0838899688"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>0838 899 688</a>
+          <div class="lk"><a class="tlink" href="https://zalo.me/0838899688" target="_blank" rel="noopener">Zalo</a><a class="tlink" href="https://www.facebook.com/ha.buithu.2019" target="_blank" rel="noopener">Facebook</a></div></div>
+      </article>
+      <article class="adv rv">
+        <img loading="lazy" src="https://dovantom123.github.io/diamond-palace/assets/advisor-dung.webp" alt="Dũng, chuyên viên tư vấn Diamond Palace" width="300" height="380">
+        <div><small>Chuyên viên tư vấn</small><h3>Dũng Diamond Palace</h3>
+          <a class="tel" href="tel:0922336288"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>0922 336 288</a>
+          <div class="lk"><a class="tlink" href="https://www.facebook.com/tran.dung.919705" target="_blank" rel="noopener">Facebook</a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sand" aria-labelledby="h-faq">
+  <div class="wrap faq">
+    <div class="head rv">
+      <p class="kicker">Thông tin hữu ích</p>
+      <h2 id="h-faq">Trước khi <em>bạn ghé thăm.</em></h2>
+    </div>
+    <details><summary>Làm sao để chọn sảnh phù hợp?<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Hãy bắt đầu từ số lượng khách, loại sự kiện và cách bố trí mong muốn. Diamond I có sức chứa theo hồ sơ 600 khách, Diamond II 1.200 khách và Diamond III 200 khách. Liên hệ để trao đổi cấu hình cụ thể.</p></details>
+    <details><summary>Có thể phát triển phong cách trang trí riêng không?<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Bạn có thể chia sẻ bảng màu, hình ảnh tham khảo và ý tưởng. Đội ngũ tư vấn sẽ trao đổi phương án, phạm vi thực hiện và chi phí cho từng hạng mục.</p></details>
+    <details><summary>Làm thế nào để xem sảnh và nhận báo giá?<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Gọi 0703 223 666 hoặc soạn email từ biểu mẫu để trao đổi lịch tham quan, tình trạng sảnh và báo giá theo ngày, quy mô cùng các hạng mục bạn cần.</p></details>
+  </div>
+</section>
+
+<!-- LIÊN HỆ -->
+<section id="lien-he" class="dark on-dark" aria-labelledby="h-ct">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="kicker">Bắt đầu từ một cuộc trò chuyện</p>
+      <h2 id="h-ct">Ngày đặc biệt của bạn <em>đang bắt đầu.</em></h2>
+      <p class="lead">Hãy kể cho chúng tôi về sự kiện bạn đang ấp ủ. Cùng tìm một không gian và phương án phù hợp.</p>
+      <div class="cinfo">
+        <a href="tel:0703223666"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>0703 223 666</a>
+        <a href="mailto:sales.diamondpalacehalong@gmail.com"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>sales.diamondpalacehalong@gmail.com</a>
+        <a href="https://m.me/DiamondPalaceHaLong" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>Nhắn tin qua Messenger</a>
+        <div class="r"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span>Lô H61, KĐT Hạ Long Marina, Đông Hùng Thắng, khu du lịch Bãi Cháy, Hạ Long, Quảng Ninh.</span></div>
+      </div>
+      <div class="map">
+        <iframe title="Bản đồ vị trí Diamond Palace Hạ Long" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Diamond+Palace+Ha+Long&amp;output=embed"></iframe>
+      </div>
+      <p style="margin-top:14px"><a class="tlink" style="color:var(--gold-soft)" href="https://www.google.com/maps/search/?api=1&amp;query=Diamond+Palace+Ha+Long" target="_blank" rel="noopener">Mở chỉ đường trên Google Maps <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+    </div>
+
+    <div class="fcard">
+      <h3>Nhận tư vấn đặt tiệc</h3>
+      <p>Điền thông tin cơ bản, chúng tôi sẽ liên hệ trao đổi phương án phù hợp.</p>
+      <div id="summary" role="alert" tabindex="-1"><b>Vui lòng kiểm tra lại:</b></div>
+      <form id="form" novalidate>
+        <div class="fgrid">
+          <div class="fld" id="f-name"><label for="name">Họ và tên <span aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" required aria-describedby="e-name"><span class="err" id="e-name">Nhập họ và tên của bạn.</span></div>
+          <div class="fld" id="f-phone"><label for="phone">Số điện thoại <span aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="h-phone e-phone"><span class="hint" id="h-phone">Ví dụ 0912 345 678</span><span class="err" id="e-phone">Nhập số điện thoại 9-11 chữ số.</span></div>
+          <div class="fld"><label for="type">Loại sự kiện</label><select id="type" name="type"><option>Tiệc cưới</option><option>Hội nghị / Hội thảo</option><option>Gala / Sự kiện doanh nghiệp</option><option>Yến tiệc / Sự kiện khác</option></select></div>
+          <div class="fld"><label for="guests">Số khách dự kiến</label><input id="guests" name="guests" type="number" min="1" inputmode="numeric"></div>
+          <div class="fld"><label for="hall">Sảnh quan tâm</label><select id="hall" name="hall"><option>Chưa chọn, cần tư vấn</option><option>Diamond I</option><option>Diamond II</option><option>Diamond III</option></select></div>
+          <div class="fld"><label for="date">Ngày dự kiến</label><input id="date" name="date" type="date"></div>
+          <div class="fld full"><label for="idea">Ý tưởng của bạn</label><textarea id="idea" name="idea"></textarea></div>
+        </div>
+        <button class="btn btn-gold" type="submit">Soạn email tư vấn <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <p id="fmsg" role="status">Nút trên mở ứng dụng email với nội dung đã điền sẵn. Website chưa nhận yêu cầu tự động. Bạn cũng có thể gọi 0703 223 666.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid2">
+      <div class="brand"><b>DIAMOND PALACE</b><small>EVENT &amp; WEDDING · HẠ LONG</small></div>
+      <div>
+        <a href="tel:0703223666">0703 223 666</a><br>
+        <a href="mailto:sales.diamondpalacehalong@gmail.com">sales.diamondpalacehalong@gmail.com</a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/DiamondPalaceHaLong" target="_blank" rel="noopener">Fanpage Facebook</a><br>
+        <a href="https://m.me/DiamondPalaceHaLong" target="_blank" rel="noopener">Messenger</a>
+      </div>
+    </div>
+    <p class="copy">© Diamond Palace Hạ Long · Trung tâm tiệc cưới &amp; sự kiện. Thông số sảnh theo profile giới thiệu, vui lòng liên hệ để xác nhận cấu hình thực tế.</p>
+  </div>
+</footer>
+
+<div class="bar-m" aria-label="Liên hệ nhanh">
+  <a href="tel:0703223666" class="pri"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Gọi tư vấn</a>
+  <a href="https://m.me/DiamondPalaceHaLong" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>Messenger</a>
+  <a href="#lien-he"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>Đặt lịch</a>
+</div>
+
+<script>
+// menu
+const nav=document.getElementById('nav'),mb=document.getElementById('menuBtn');
+function setMenu(o){nav.classList.toggle('open',o);mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Đóng menu':'Mở menu');document.body.style.overflow=o?'hidden':''}
+mb.addEventListener('click',()=>setMenu(!nav.classList.contains('open')));
+nav.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){setMenu(false);mb.focus()}});
+addEventListener('resize',()=>{if(innerWidth>1240)setMenu(false)});
+
+// preset form fields from cards / quick bar
+const $=id=>document.getElementById(id);
+document.querySelectorAll('[data-hall]').forEach(a=>a.addEventListener('click',()=>{$('hall').value=a.dataset.hall}));
+document.querySelectorAll('[data-type]').forEach(a=>a.addEventListener('click',()=>{$('type').value=a.dataset.type}));
+$('quickForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  $('type').value=$('qType').value;$('guests').value=$('qGuests').value;$('date').value=$('qDate').value;
+  const g=+$('qGuests').value; if(g){ $('hall').value = g>600?'Diamond II':(g>200?'Diamond I':'Diamond III'); }
+  $('lien-he').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
+  setTimeout(()=>$('name').focus({preventScroll:true}),500);
+});
+
+// active nav link
+const links=[...document.querySelectorAll('nav a.l')];
+const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+const so=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){links.forEach((a,i)=>a.toggleAttribute('aria-current',secs[i]===x.target));links.forEach((a,i)=>{if(secs[i]===x.target)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')})}}),{rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(s=>s&&so.observe(s));
+
+// lightbox
+const lb=$('lb');let lastBtn=null;
+document.querySelectorAll('.gal button').forEach(b=>b.addEventListener('click',()=>{lastBtn=b;$('lbImg').src=b.dataset.full;$('lbImg').alt=b.dataset.cap;$('lbCap').textContent=b.dataset.cap;lb.showModal()}));
+$('lbClose').addEventListener('click',()=>lb.close());
+lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
+lb.addEventListener('close',()=>lastBtn&&lastBtn.focus());
+
+// form validation with error summary
+const form=$('form'),sum=$('summary');
+function setBad(id,bad){$('f-'+id).classList.toggle('bad',bad);$(id).setAttribute('aria-invalid',bad)}
+function validate(){
+  const errs=[];
+  const n=$('name').value.trim(),p=$('phone').value.replace(/[\s.\-()+]/g,'');
+  const nb=!n; setBad('name',nb); if(nb)errs.push(['name','Nhập họ và tên của bạn']);
+  const pb=!/^\d{9,11}$/.test(p); setBad('phone',pb); if(pb)errs.push(['phone','Nhập số điện thoại 9-11 chữ số']);
+  return errs;
+}
+['name','phone'].forEach(id=>$(id).addEventListener('blur',()=>{if($(id).value)validate()}));
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  const errs=validate();
+  if(errs.length){
+    sum.innerHTML='<b>Vui lòng kiểm tra lại:</b>'+errs.map(x=>`<a href="#${x[0]}">${x[1]}</a>`).join('');
+    sum.classList.add('show');sum.focus();
+    sum.querySelectorAll('a').forEach(a=>a.addEventListener('click',ev=>{ev.preventDefault();$(a.getAttribute('href').slice(1)).focus()}));
+    return;
+  }
+  sum.classList.remove('show');
+  const f=new FormData(form);
+  const body=`Họ tên: ${f.get('name')}\nSĐT: ${f.get('phone')}\nLoại sự kiện: ${f.get('type')}\nSố khách: ${f.get('guests')||'-'}\nSảnh quan tâm: ${f.get('hall')}\nNgày dự kiến: ${f.get('date')||'-'}\nÝ tưởng: ${f.get('idea')||'-'}`;
+  $('fmsg').textContent='Đang mở ứng dụng email của bạn. Nếu không thấy, hãy gọi 0703 223 666 để được tư vấn ngay.';
+  location.href='mailto:sales.diamondpalacehalong@gmail.com?subject='+encodeURIComponent('Yêu cầu tư vấn đặt tiệc - '+f.get('name'))+'&body='+encodeURIComponent(body);
+});
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
